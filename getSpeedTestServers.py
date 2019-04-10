@@ -21,5 +21,5 @@ for server in all_servers:
     if server_country in countries:
         servers[server_country].append({'host': data[3].get_text().split(':')[0], 'id': data[4].get_text()})
 
-with open("speedtest_servers.json", "w+") as f:
+with open("speedtest_servers.json", "w") as f:
     json.dump(servers, f, indent=4, sort_keys=True)
