@@ -2,6 +2,7 @@ import json
 import os
 import requests
 from datetime import datetime
+from random import shuffle
 from ripe.atlas.cousteau import (
     Ping,
     Traceroute,
@@ -24,8 +25,9 @@ for source_country in countries:
     source_country_code = r.json()[0]['alpha2Code']
     for destination_country, destination_country_servers in servers.items():
         measurements[destination_country] = list()
+        shuffle(destination_country_servers)
         for index, speedtest_server in enumerate(destination_country_servers):
-            if index == 3:
+            if index == 2:
                 break
             ping = Ping(af=4, target=speedtest_server['host'],
                         description="From {} to {}".format(source_country, destination_country))
