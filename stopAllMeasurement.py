@@ -19,8 +19,6 @@ for filepath in glob.iglob('measurements/*.json'):
                         failed_measurements.append(measurement)
             except KeyError:
                 pass
-        break
-    break
 
 with open('data/measurements-failed-to-stop.txt', 'w') as file:
     for elt in failed_measurements:
