@@ -30,12 +30,14 @@ for source_country in countries:
             if index == 2:
                 break
             ping = Ping(af=4, target=speedtest_server['host'],
-                        description="From {} to {}".format(source_country, destination_country))
+                        description="From {} to {}".format(source_country, destination_country),
+                        interval=10800)
             traceroute = Traceroute(
                 af=4,
                 target=speedtest_server['host'],
                 description="From {} to {}".format(source_country, destination_country),
                 protocol="ICMP",
+                interval=10800
             )
             source = AtlasSource(type="country", value=source_country_code, requested=5)
             atlas_request = AtlasCreateRequest(
