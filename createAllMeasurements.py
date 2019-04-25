@@ -12,7 +12,7 @@ from ripe.atlas.cousteau import (
 
 ATLAS_API_KEY = "INSERT_YOUR_API_KEY"
 
-with open('speedtest_servers.json', 'r') as f:
+with open('working_speedtest_servers.json', 'r') as f:
     servers = json.load(f)
 
 with open('countries.txt', 'r') as f:
