@@ -54,7 +54,7 @@ for source_country in countries:
                      "measurement_id": response['measurements']})
             else:
                 measurements[destination_country].append(
-                    {"host": speedtest_server['host'], "is_success": is_success})
+                    {"host": speedtest_server['host'], "is_success": is_success, "reason": response})
 
     filename = "measurements/{}.json".format(source_country)
     os.makedirs(os.path.dirname(filename), exist_ok=True)
