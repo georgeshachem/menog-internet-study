@@ -27,7 +27,7 @@ for source_country in countries:
         measurements[destination_country] = list()
         shuffle(destination_country_servers)
         for index, speedtest_server in enumerate(destination_country_servers):
-            if index == 2:
+            if index == 3:
                 break
             ping = Ping(af=4, target=speedtest_server['host'],
                         description="From {} to {}".format(source_country, destination_country),
