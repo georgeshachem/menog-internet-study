@@ -1,19 +1,27 @@
 {
     "Bahrain": [
         {
-            "host": "speedtest.viva.com.bh",
+            "host": "sp1.etisalcom.com",
             "is_success": true,
             "measurement_id": [
-                20968859,
-                20968860
+                20989210,
+                20989211
             ]
         },
         {
-            "host": "stest.bh.zain.com",
+            "host": "speedtest.lsc.com.bh",
             "is_success": true,
             "measurement_id": [
-                20968861,
-                20968862
+                20989212,
+                20989213
+            ]
+        },
+        {
+            "host": "88.201.63.10",
+            "is_success": true,
+            "measurement_id": [
+                20989214,
+                20989215
             ]
         }
     ],
@@ -22,34 +30,50 @@
             "host": "speedtest.aionet.ir",
             "is_success": true,
             "measurement_id": [
-                20968863,
-                20968864
+                20989216,
+                20989217
             ]
         },
         {
-            "host": "turbo.nakhl.net",
+            "host": "speedtest1.linkpardaz.net",
             "is_success": true,
             "measurement_id": [
-                20968865,
-                20968866
+                20989218,
+                20989219
+            ]
+        },
+        {
+            "host": "tzbspd2.mci.ir",
+            "is_success": true,
+            "measurement_id": [
+                20989220,
+                20989221
             ]
         }
     ],
     "Iraq": [
         {
-            "host": "sp5.fastiraq.com",
+            "host": "sp1.fastiraq.com",
             "is_success": true,
             "measurement_id": [
-                20968873,
-                20968874
+                20989222,
+                20989223
             ]
         },
         {
-            "host": "86.111.144.210",
+            "host": "speed8.onlineco.org",
             "is_success": true,
             "measurement_id": [
-                20968875,
-                20968876
+                20989224,
+                20989225
+            ]
+        },
+        {
+            "host": "sptest.scopesky.iq",
+            "is_success": true,
+            "measurement_id": [
+                20989226,
+                20989227
             ]
         }
     ],
@@ -58,88 +82,140 @@
             "host": "speedtest.mada.jo",
             "is_success": true,
             "measurement_id": [
-                20968877,
-                20968878
+                20989228,
+                20989229
             ]
         },
         {
-            "host": "speedtest.mada.jo",
+            "host": "speedtest.orange.jo",
             "is_success": true,
             "measurement_id": [
-                20968879,
-                20968880
+                20989230,
+                20989231
+            ]
+        },
+        {
+            "host": "speedtest.umniah.com",
+            "is_success": true,
+            "measurement_id": [
+                20989232,
+                20989233
             ]
         }
     ],
     "Kuwait": [
         {
-            "host": "speedtest.qualitynet.net",
+            "host": "speedtest3.zain.net",
             "is_success": true,
             "measurement_id": [
-                20968881,
-                20968882
+                20989234,
+                20989235
             ]
         },
         {
-            "host": "speedtest1.zain.net",
+            "host": "ookla.ooredoo.com.kw",
             "is_success": true,
             "measurement_id": [
-                20968883,
-                20968884
+                20989236,
+                20989237
+            ]
+        },
+        {
+            "host": "speedtest.qualitynet.net",
+            "is_success": true,
+            "measurement_id": [
+                20989238,
+                20989239
             ]
         }
     ],
     "Lebanon": [
         {
-            "host": "speedtest.lebol.net",
+            "host": "sp1.smartnetworkslb.net",
             "is_success": true,
             "measurement_id": [
-                20968885,
-                20968886
+                20989252,
+                20989253
             ]
         },
         {
-            "host": "speedtest1.idm.net.lb",
+            "host": "speedtest2.ogero.gov.lb",
             "is_success": true,
             "measurement_id": [
-                20968887,
-                20968888
+                20989254,
+                20989255
+            ]
+        },
+        {
+            "host": "speedtest.sme-lb.com",
+            "is_success": true,
+            "measurement_id": [
+                20989256,
+                20989257
             ]
         }
     ],
     "Oman": [
         {
-            "host": "speed.omren.om",
+            "host": "speedtest.awasr.com",
             "is_success": true,
             "measurement_id": [
-                20968889,
-                20968890
+                20989258,
+                20989259
             ]
         },
         {
             "host": "speedtest2.ooredoo.om",
             "is_success": true,
             "measurement_id": [
-                20968891,
-                20968892
+                20989260,
+                20989261
             ]
+        },
+        {
+            "host": "speedtest.omantel.om",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "Measurements must have the start time in future",
+                            "source": {
+                                "pointer": "/definitions/0/start_time"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
         }
     ],
     "Palestine": [
         {
-            "host": "213.244.72.22",
+            "host": "speedtest.bnet.ps",
             "is_success": true,
             "measurement_id": [
-                20968893,
-                20968894
+                20989262,
+                20989263
             ]
         },
         {
-            "host": "speedtest.moon.ps",
+            "host": "213.244.72.22",
             "is_success": true,
             "measurement_id": [
-                20968895,
-                20968896
+                20989264,
+                20989265
+            ]
+        },
+        {
+            "host": "speedtest.speedclick.ps",
+            "is_success": true,
+            "measurement_id": [
+                20989266,
+                20989267
             ]
         }
     ],
@@ -148,88 +224,152 @@
             "host": "speedtest.vodafone.com.qa",
             "is_success": true,
             "measurement_id": [
-                20968897,
-                20968898
+                20989268,
+                20989269
+            ]
+        },
+        {
+            "host": "speedtest2.ooredoo.qa",
+            "is_success": true,
+            "measurement_id": [
+                20989270,
+                20989271
             ]
         },
         {
             "host": "speedtest01.vodafone.com.qa",
             "is_success": true,
             "measurement_id": [
-                20968899,
-                20968900
+                20989272,
+                20989273
             ]
         }
     ],
     "Saudi Arabia": [
         {
-            "host": "jed-speedtest.saudi.net.sa",
+            "host": "jubail-speedtest.saudi.net.sa",
             "is_success": true,
             "measurement_id": [
-                20968901,
-                20968902
+                20989274,
+                20989275
             ]
         },
         {
-            "host": "ab-speedtest.saudi.net.sa",
+            "host": "87.101.144.21",
             "is_success": true,
             "measurement_id": [
-                20968907,
-                20968908
+                20989285,
+                20989286
+            ]
+        },
+        {
+            "host": "jed-speedtest.saudi.net.sa",
+            "is_success": true,
+            "measurement_id": [
+                20989287,
+                20989288
             ]
         }
     ],
     "Syria": [
         {
-            "host": "speedtest.afrin.sada.tel",
-            "is_success": true,
-            "measurement_id": [
-                20968910,
-                20968911
-            ]
-        },
-        {
             "host": "testspeed.inet.sy",
             "is_success": true,
             "measurement_id": [
-                20968912,
-                20968913
+                20989289,
+                20989290
+            ]
+        },
+        {
+            "host": "82.137.198.10",
+            "is_success": true,
+            "measurement_id": [
+                20989291,
+                20989292
+            ]
+        },
+        {
+            "host": "speedtest.afrin.sada.tel",
+            "is_success": true,
+            "measurement_id": [
+                20989294,
+                20989295
             ]
         }
     ],
     "Turkey": [
         {
-            "host": "speedtest.radore.com",
-            "is_success": true,
-            "measurement_id": [
-                20968914,
-                20968915
-            ]
+            "host": "adn1speedtest.turktelekom.com.tr",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "Measurements must have the start time in future",
+                            "source": {
+                                "pointer": "/definitions/0/start_time"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
         },
         {
-            "host": "speedtest.fixnet.com.tr",
+            "host": "kmr1speedtest.turktelekom.com.tr",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "Measurements must have the start time in future",
+                            "source": {
+                                "pointer": "/definitions/0/start_time"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "artn01.hizinitestet.com",
             "is_success": true,
             "measurement_id": [
-                20968917,
-                20968918
+                20989297,
+                20989298
             ]
         }
     ],
     "United Arab Emirates": [
         {
-            "host": "speedtest.orixcom.net",
-            "is_success": true,
-            "measurement_id": [
-                20968919,
-                20968920
-            ]
-        },
-        {
             "host": "speedtest.du.ae",
             "is_success": true,
             "measurement_id": [
-                20968921,
-                20968922
+                20989299,
+                20989300
+            ]
+        },
+        {
+            "host": "ae.ap.speedtest.i3d.net",
+            "is_success": true,
+            "measurement_id": [
+                20989301,
+                20989302
+            ]
+        },
+        {
+            "host": "speedtest.etisalat.ae",
+            "is_success": true,
+            "measurement_id": [
+                20989303,
+                20989304
             ]
         }
     ],
@@ -238,8 +378,8 @@
             "host": "speedtest.yemen.net.ye",
             "is_success": true,
             "measurement_id": [
-                20968923,
-                20968924
+                20989305,
+                20989306
             ]
         }
     ]
