@@ -51,8 +51,3 @@ for filepath in glob.iglob('measurements/*.json'):
                     measurements[destination_country].append(
                         {"host": elt['host'], "is_success": is_success,
                          "reason": response['error']['detail']})
-
-        print(measurements)
-        print("\n\n\n")
-
-    # print(data)
