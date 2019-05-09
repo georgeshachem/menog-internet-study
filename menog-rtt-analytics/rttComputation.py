@@ -4,12 +4,13 @@ import sys
 import numpy as np
 import glob
 from ripe.atlas.sagan import PingResult
+from ripe.atlas.sagan import Result
 
+measurement_result_folder = "../menog-rtt-measure/measurements/"
 folder_array =[]
 final_folder_array =[]
 
-CountryDistance =
-[
+CountryDistance = [
 [1, 487.21, 990, 432.91, 1680, 859.39, 1600, 140, 1594.86, 2238.6],
 [487.21, 1, 695.24, 772.49, 1466.11, 1507.96, 2467.12, 1155.51, 1733.26, 8709.77],
 [989.75, 695.24, 1, 556.83, 825.59, 1757.4, 875.48, 1131.37, 751.56, 1261.73],
@@ -22,31 +23,22 @@ CountryDistance =
 [2238.6, 1694, 1262, 2410, 1002, 3015.91, 931.81, 2380, 776, 1]
 ]
 
-def getJSON(filePathAndName):
-         with open(filePathAndName, 'r') as fp:
-                  return json.load(fp)
-
-for countrycountry in glob.glob('**/**/'):
-
-         Lmin = 999999
-         folder_array =[]
-         for countryfile in glob.glob(countrycountry + '**/'):
-                  
-                  Lmin = 999999
-                  for file in glob.glob(countryfile + '/*.json'):
-                           print(file)
-                           myObject = getJSON(file)
-                           if(myObject[0].get('type') == 'ping'):
-
-                                    res_file = file
-                                    with open(res_file) as res_handler:
-                                        json_results = json.load(res_handler)
-                                        for result in json_results:
-                                             parsed_result = PingResult.get(result)
-                                             if(parsed_result.rtt_min == None):
-                                                      parsed_result.rtt_min=9999
-                                             if(parsed_result.rtt_min < Lmin):
-                                                      Lmin=parsed_result.rtt_min
-                  folder_array.append(Lmin)
-         final_folder_array.append(folder_array)
+for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
+    folder_array =[]
+    for country_file in glob.glob(country_folder + '**/'):
+        rtt_min = 1e5
+        for measurement_file in glob.glob(country_file + '/*.json'):
+            with open(measurement_file) as file_handler:
+                json_results = json.load(file_handler)
+                for result in json_results:
+                    raw_result = Result.get(result)
+                    if(raw_result.type != "ping"):
+                        continue
+                    parsed_result = PingResult.get(result)
+                    if(parsed_result.rtt_min == None):
+                        continue
+                    if(parsed_result.rtt_min < rtt_min):
+                        rtt_min=parsed_result.rtt_min
+        folder_array.append(rtt_min)
+    final_folder_array.append(folder_array)
 print(final_folder_array)
