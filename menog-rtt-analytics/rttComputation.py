@@ -7,8 +7,7 @@ from ripe.atlas.sagan import PingResult
 from ripe.atlas.sagan import Result
 
 measurement_result_folder = "../menog-rtt-measure/measurements/"
-folder_array =[]
-final_folder_array =[]
+global_rtt =[]
 
 CountryDistance = [
 [1, 487.21, 990, 432.91, 1680, 859.39, 1600, 140, 1594.86, 2238.6],
@@ -24,7 +23,7 @@ CountryDistance = [
 ]
 
 for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
-    folder_array =[]
+    country_rtt =[]
     for country_file in glob.glob(country_folder + '**/'):
         rtt_min = 1e5
         for measurement_file in glob.glob(country_file + '/*.json'):
@@ -39,6 +38,6 @@ for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
                         continue
                     if(parsed_result.rtt_min < rtt_min):
                         rtt_min=parsed_result.rtt_min
-        folder_array.append(rtt_min)
-    final_folder_array.append(folder_array)
-print(final_folder_array)
+        country_rtt.append(rtt_min)
+    global_rtt.append(country_rtt)
+print(global_rtt)
