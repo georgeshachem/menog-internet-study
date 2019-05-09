@@ -1,6 +1,5 @@
 import json
-import socket
-import pyping
+from ping3 import ping
 
 with open("speedtest_servers.json", "r") as f:
     all_servers = json.load(f)
@@ -11,8 +10,7 @@ for country, country_servers in all_servers.items():
     working_servers[country] = list()
     for server in country_servers:
         try:
-            result = pyping.ping('82.102.232.203').ret_code
-            if result == 0:
+            if ping(server['host']) is not None:
                 working_servers[country].append(server)
         except Exception as e:
             print(e)
