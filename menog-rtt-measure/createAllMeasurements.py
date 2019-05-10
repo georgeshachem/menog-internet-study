@@ -1,6 +1,5 @@
 import json
 import os
-import requests
 from datetime import datetime
 from random import shuffle
 from ripe.atlas.cousteau import (
@@ -15,14 +14,11 @@ ATLAS_API_KEY = "INSERT_YOUR_API_KEY"
 with open('working_speedtest_servers.json', 'r') as f:
     servers = json.load(f)
 
-with open('countries.txt', 'r') as f:
-    countries = f.readlines()
-    countries = list(map(lambda s: s.strip(), countries))
+with open('countries.json', 'r') as f:
+    countries = json.load(f)
 
-for source_country in countries:
+for source_country, source_country_code in countries.items():
     measurements = dict()
-    r = requests.get("https://restcountries.eu/rest/v2/name/{}".format(source_country))
-    source_country_code = r.json()[0]['alpha2Code']
     for destination_country, destination_country_servers in servers.items():
         measurements[destination_country] = list()
         shuffle(destination_country_servers)
