@@ -3,7 +3,7 @@ import os
 import ntpath
 import json
 from datetime import datetime
-import requests
+
 from ripe.atlas.cousteau import (
     Ping,
     Traceroute,
