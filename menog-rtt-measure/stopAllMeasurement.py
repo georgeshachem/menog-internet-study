@@ -20,6 +20,6 @@ for filepath in glob.iglob('measurements/*.json'):
             except KeyError:
                 pass
 
-with open('data/measurements-failed-to-stop.txt', 'w') as file:
+with open('measurements-failed-to-stop.txt', 'w') as file:
     for elt in failed_measurements:
         file.write("%i\n" % elt)
