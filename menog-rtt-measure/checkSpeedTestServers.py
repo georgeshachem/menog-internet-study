@@ -6,12 +6,12 @@ with open("speedtest_servers.json", "r") as f:
 
 working_servers = dict()
 
-for country, country_servers in all_servers.items():
-    working_servers[country] = list()
+for country_code, country_servers in all_servers.items():
+    working_servers[country_code] = list()
     for server in country_servers:
         try:
             if ping(server['host']) is not None:
-                working_servers[country].append(server)
+                working_servers[country_code].append(server)
         except Exception as e:
             print(e)
 
