@@ -14,23 +14,21 @@ from ripe.atlas.cousteau import (
 ATLAS_API_KEY = "INSERT_YOUR_API_KEY"
 
 for filepath in glob.iglob('measurements/*.json'):
-    source_country = os.path.splitext(ntpath.basename(filepath))[0]
-    r = requests.get("https://restcountries.eu/rest/v2/name/{}".format(source_country))
-    source_country_code = r.json()[0]['alpha2Code']
+    source_country_code = os.path.splitext(ntpath.basename(filepath))[0]
     with open(filepath) as f:
         data = json.load(f)
-    for destination_country, measurements in data.items():
+    for destination_country_code, measurements in data.items():
         for elt in measurements[:]:
             if elt['is_success'] is False:
                 measurements.remove(elt)
 
                 ping = Ping(af=4, target=elt['host'],
-                            description="From {} to {}".format(source_country, destination_country),
+                            description="From {} to {}".format(source_country_code, destination_country_code),
                             interval=10800)
                 traceroute = Traceroute(
                     af=4,
                     target=elt['host'],
-                    description="From {} to {}".format(source_country, destination_country),
+                    description="From {} to {}".format(source_country_code, destination_country_code),
                     protocol="ICMP",
                     interval=10800
                 )
@@ -44,10 +42,10 @@ for filepath in glob.iglob('measurements/*.json'):
                 )
                 (is_success, response) = atlas_request.create()
                 if is_success:
-                    measurements[destination_country].append(
+                    measurements[destination_country_code].append(
                         {"host": elt['host'], "is_success": is_success,
                          "measurement_id": response['measurements']})
                 else:
-                    measurements[destination_country].append(
+                    measurements[destination_country_code].append(
                         {"host": elt['host'], "is_success": is_success,
                          "reason": response})
