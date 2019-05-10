@@ -52,7 +52,7 @@ for source_country, source_country_code in countries.items():
                 measurements[destination_country].append(
                     {"host": speedtest_server['host'], "is_success": is_success, "reason": response})
 
-    filename = "measurements/{}.json".format(source_country)
+    filename = "measurements/{}.json".format(source_country_code)
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         json.dump(measurements, f, indent=4, sort_keys=True)
