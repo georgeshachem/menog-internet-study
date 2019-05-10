@@ -19,19 +19,19 @@ with open('countries.json', 'r') as f:
 
 for source_country, source_country_code in countries.items():
     measurements = dict()
-    for destination_country, destination_country_servers in servers.items():
-        measurements[destination_country] = list()
+    for destination_country_code, destination_country_servers in servers.items():
+        measurements[destination_country_code] = list()
         shuffle(destination_country_servers)
         for index, speedtest_server in enumerate(destination_country_servers):
             if index == 3:
                 break
             ping = Ping(af=4, target=speedtest_server['host'],
-                        description="From {} to {}".format(source_country, destination_country),
+                        description="From {} to {}".format(source_country_code, destination_country_code),
                         interval=10800)
             traceroute = Traceroute(
                 af=4,
                 target=speedtest_server['host'],
-                description="From {} to {}".format(source_country, destination_country),
+                description="From {} to {}".format(source_country_code, destination_country_code),
                 protocol="ICMP",
                 interval=10800
             )
@@ -45,11 +45,11 @@ for source_country, source_country_code in countries.items():
             )
             (is_success, response) = atlas_request.create()
             if is_success:
-                measurements[destination_country].append(
+                measurements[destination_country_code].append(
                     {"host": speedtest_server['host'], "is_success": is_success,
                      "measurement_id": response['measurements']})
             else:
-                measurements[destination_country].append(
+                measurements[destination_country_code].append(
                     {"host": speedtest_server['host'], "is_success": is_success, "reason": response})
 
     filename = "measurements/{}.json".format(source_country_code)
