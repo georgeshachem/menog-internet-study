@@ -24,9 +24,9 @@ CountryDistance = [
 
 for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
     country_rtt =[]
-    for country_file in glob.glob(country_folder + '**/'):
+    for country_file in glob.iglob(country_folder + '**/'):
         rtt_min = 1e5
-        for measurement_file in glob.glob(country_file + '/*.json'):
+        for measurement_file in glob.iglob(country_file + '/*.json'):
             with open(measurement_file) as file_handler:
                 json_results = json.load(file_handler)
                 for result in json_results:
