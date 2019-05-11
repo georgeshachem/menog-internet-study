@@ -3,11 +3,13 @@ import json
 import sys
 import numpy as np
 import glob
+import os
 from ripe.atlas.sagan import PingResult
 from ripe.atlas.sagan import Result
 
 measurement_result_folder = "../menog-rtt-measure/measurements/"
-global_rtt =[]
+rtt_min_list =[]
+rtt_min_dict ={ }
 
 CountryDistance = [
 [1, 487.21, 990, 432.91, 1680, 859.39, 1600, 140, 1594.86, 2238.6],
@@ -23,9 +25,12 @@ CountryDistance = [
 ]
 
 for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
-    country_rtt =[]
+    country_rtt_min =[]
+    main_country_code = os.path.basename(os.path.dirname(country_folder))
+    rtt_min_dict[main_country_code] = {}
     for country_file in glob.iglob(country_folder + '**/'):
         rtt_min = 1e5
+        relative_country_code = os.path.basename(os.path.dirname(country_file))
         for measurement_file in glob.iglob(country_file + '/*.json'):
             with open(measurement_file) as file_handler:
                 json_results = json.load(file_handler)
@@ -38,6 +43,8 @@ for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
                         continue
                     if(parsed_result.rtt_min < rtt_min):
                         rtt_min=parsed_result.rtt_min
-        country_rtt.append(rtt_min)
-    global_rtt.append(country_rtt)
-print(global_rtt)
+        country_rtt_min.append(rtt_min)
+        rtt_min_dict[main_country_code][relative_country_code] = rtt_min
+    rtt_min_list.append(country_rtt_min)
+print(rtt_min_list)
+print(rtt_min_dict)
