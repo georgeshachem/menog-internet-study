@@ -2,6 +2,7 @@ import requests
 import json
 import sys
 import numpy as np
+import pandas as pd
 import glob
 import os
 from ripe.atlas.sagan import PingResult
@@ -48,3 +49,6 @@ for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
     rtt_min_list.append(country_rtt_min)
 print(rtt_min_list)
 print(rtt_min_dict)
+
+rtt_min_dataframe = pd.DataFrame(rtt_min_dict)
+rtt_min_dataframe.to_csv(r'graphs/rtt_min.csv')
