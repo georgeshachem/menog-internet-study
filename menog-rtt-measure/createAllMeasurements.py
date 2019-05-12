@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from random import shuffle
 from ripe.atlas.cousteau import (
     Ping,
@@ -37,7 +37,7 @@ for source_country, source_country_code in countries.items():
             )
             source = AtlasSource(type="country", value=source_country_code, requested=5)
             atlas_request = AtlasCreateRequest(
-                start_time=datetime.utcnow(),
+                start_time=datetime.utcnow() + timedelta(seconds=60),
                 key=ATLAS_API_KEY,
                 measurements=[ping, traceroute],
                 sources=[source],
