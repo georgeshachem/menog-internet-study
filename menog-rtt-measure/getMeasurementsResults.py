@@ -18,7 +18,8 @@ for filepath in glob.iglob('measurements/*.json'):
                 for measurement in elt['measurement_id']:
                     kwargs = {"msm_id": measurement}
                     (is_success, results) = AtlasResultsRequest(**kwargs).create()
-                    with open("measurements/data/{}/{}/{}.json".format(file_name, k, measurement), "w") as f:
-                        json.dump(results, f, indent=4, sort_keys=True)
+                    if (is_success):
+                    	with open("measurements/data/{}/{}/{}.json".format(file_name, k, measurement), "w") as f:
+                        	json.dump(results, f, indent=4, sort_keys=True)
             except KeyError:
                 pass
