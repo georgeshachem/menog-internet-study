@@ -4,250 +4,262 @@
             "host": "ae.ap.speedtest.i3d.net",
             "is_success": true,
             "measurement_id": [
-                21395726,
-                21395727
+                21396160,
+                21396161
             ]
         },
         {
             "host": "speedtest.orixcom.net",
             "is_success": true,
             "measurement_id": [
-                21395730,
-                21395731
+                21396162,
+                21396163
             ]
         }
     ],
     "BH": [
         {
-            "host": "stest.bh.zain.com",
-            "is_success": true,
-            "measurement_id": [
-                21395734,
-                21395735
-            ]
+            "host": "speedtest.viacloud.com",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "We do not allow more than 25 concurrent measurements to the same target: 87.252.99.82.",
+                            "source": {
+                                "pointer": ""
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
         },
         {
-            "host": "speedtest.viacloud.com",
+            "host": "sp1.etisalcom.com",
             "is_success": true,
             "measurement_id": [
-                21395738,
-                21395739
+                21396168,
+                21396169
             ]
         },
         {
             "host": "speedtest.kalaam-telecom.com",
             "is_success": true,
             "measurement_id": [
-                21395742,
-                21395743
+                21396172,
+                21396173
             ]
         }
     ],
     "IQ": [
         {
-            "host": "speed2.onlineco.org",
+            "host": "speedtest1.earthlinktele.com",
             "is_success": true,
             "measurement_id": [
-                21395746,
-                21395747
+                21396176,
+                21396177
+            ]
+        },
+        {
+            "host": "speed.onlineco.org",
+            "is_success": true,
+            "measurement_id": [
+                21396180,
+                21396181
             ]
         },
         {
             "host": "ookla.tarinnet.info",
             "is_success": true,
             "measurement_id": [
-                21395750,
-                21395751
-            ]
-        },
-        {
-            "host": "speedtest.maximus-tele.com",
-            "is_success": true,
-            "measurement_id": [
-                21395754,
-                21395756
+                21396183,
+                21396184
             ]
         }
     ],
     "IR": [
         {
-            "host": "speedtest.techno2000.net",
+            "host": "speed.atinet.ir",
             "is_success": true,
             "measurement_id": [
-                21395765,
-                21395766
+                21396188,
+                21396189
             ]
         },
         {
-            "host": "sp.z-tel.ir",
+            "host": "speedtest.wifi-iran.com",
             "is_success": true,
             "measurement_id": [
-                21395767,
-                21395768
+                21396192,
+                21396193
             ]
         },
         {
-            "host": "testspeed.parsonline.com",
+            "host": "www.speedtest.ir",
             "is_success": true,
             "measurement_id": [
-                21395773,
-                21395774
+                21396196,
+                21396197
             ]
         }
     ],
     "KW": [
         {
-            "host": "ookla3.viva.com.kw",
+            "host": "speedtest.qualitynet.net",
             "is_success": true,
             "measurement_id": [
-                21395779,
-                21395780
+                21396200,
+                21396201
             ]
         },
         {
-            "host": "ookla4.viva.com.kw",
+            "host": "st21.fasttelco.com",
             "is_success": true,
             "measurement_id": [
-                21395783,
-                21395784
+                21396204,
+                21396205
             ]
         },
         {
-            "host": "speedtest.gulfnet.com.kw",
+            "host": "94.128.15.102",
             "is_success": true,
             "measurement_id": [
-                21395791,
-                21395792
+                21396208,
+                21396209
             ]
         }
     ],
     "LB": [
         {
-            "host": "speedtest.mobi.net.lb",
+            "host": "safawinet-lb.info",
             "is_success": true,
             "measurement_id": [
-                21395797,
-                21395798
+                21396212,
+                21396213
             ]
         },
         {
-            "host": "speedtest.aoun-networks.com",
+            "host": "speedtest.bitarnet.net",
             "is_success": true,
             "measurement_id": [
-                21395801,
-                21395802
+                21396216,
+                21396217
             ]
         },
         {
-            "host": "speedtest.sme-lb.com",
+            "host": "supermoon.alfa.com.lb",
             "is_success": true,
             "measurement_id": [
-                21395807,
-                21395808
+                21396220,
+                21396221
             ]
         }
     ],
     "OM": [
         {
-            "host": "speedtest2.ooredoo.om",
-            "is_success": true,
-            "measurement_id": [
-                21395813,
-                21395814
-            ]
-        },
-        {
-            "host": "speedtest.awasr.com",
-            "is_success": true,
-            "measurement_id": [
-                21395819,
-                21395820
-            ]
-        },
-        {
             "host": "speedtest.omantel.om",
             "is_success": true,
             "measurement_id": [
-                21395823,
-                21395825
+                21396224,
+                21396225
+            ]
+        },
+        {
+            "host": "speedtest2.ooredoo.om",
+            "is_success": true,
+            "measurement_id": [
+                21396228,
+                21396230
+            ]
+        },
+        {
+            "host": "5.21.229.74",
+            "is_success": true,
+            "measurement_id": [
+                21396235,
+                21396236
             ]
         }
     ],
     "PS": [
         {
-            "host": "speedtest5.mada.ps",
+            "host": "speedtest.mada.ps",
             "is_success": true,
             "measurement_id": [
-                21395827,
-                21395828
+                21396241,
+                21396242
             ]
         },
         {
-            "host": "speedtest.bnet.ps",
+            "host": "speedtest1.together-pal.com",
             "is_success": true,
             "measurement_id": [
-                21395837,
-                21395838
+                21396245,
+                21396246
             ]
         },
         {
-            "host": "speedtest4.mada.ps",
+            "host": "212.14.233.186",
             "is_success": true,
             "measurement_id": [
-                21395841,
-                21395842
+                21396249,
+                21396250
             ]
         }
     ],
     "QA": [
         {
-            "host": "speedtest.vodafone.com.qa",
-            "is_success": true,
-            "measurement_id": [
-                21395847,
-                21395848
-            ]
-        },
-        {
             "host": "speedtest01.vodafone.com.qa",
             "is_success": true,
             "measurement_id": [
-                21395853,
-                21395854
+                21396253,
+                21396254
+            ]
+        },
+        {
+            "host": "speedtest.vodafone.com.qa",
+            "is_success": true,
+            "measurement_id": [
+                21396257,
+                21396258
             ]
         },
         {
             "host": "speedtest2.ooredoo.qa",
             "is_success": true,
             "measurement_id": [
-                21395857,
-                21395858
+                21396261,
+                21396262
             ]
         }
     ],
     "SA": [
         {
-            "host": "speedtest.stcs.com.sa",
+            "host": "yanbu-speedtest.saudi.net.sa",
             "is_success": true,
             "measurement_id": [
-                21395863,
-                21395864
+                21396265,
+                21396266
             ]
         },
         {
-            "host": "baha-speedtest.saudi.net.sa",
+            "host": "qassim-speedtest.saudi.net.sa",
             "is_success": true,
             "measurement_id": [
-                21395871,
-                21395872
+                21396269,
+                21396270
             ]
         },
         {
-            "host": "najran-speedtest.saudi.net.sa",
+            "host": "jouf-speedtest.saudi.net.sa",
             "is_success": true,
             "measurement_id": [
-                21395879,
-                21395880
+                21396273,
+                21396274
             ]
         }
     ],
@@ -256,34 +268,34 @@
             "host": "speedtest.afrin.sada.tel",
             "is_success": true,
             "measurement_id": [
-                21395893,
-                21395894
+                21396277,
+                21396278
             ]
         }
     ],
     "TR": [
         {
-            "host": "usak01.hizinitestet.com",
+            "host": "izmt01.hizinitestet.com",
             "is_success": true,
             "measurement_id": [
-                21395899,
-                21395900
+                21396281,
+                21396282
             ]
         },
         {
-            "host": "speedtest.strnet.com.tr",
+            "host": "46.245.160.220",
             "is_success": true,
             "measurement_id": [
-                21395907,
-                21395908
+                21396283,
+                21396284
             ]
         },
         {
-            "host": "speedtest.hizhosting.com",
+            "host": "speedtest.netwifi.com.tr",
             "is_success": true,
             "measurement_id": [
-                21395911,
-                21395913
+                21396287,
+                21396288
             ]
         }
     ]
