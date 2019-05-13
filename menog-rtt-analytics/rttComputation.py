@@ -10,7 +10,10 @@ from ripe.atlas.sagan import Result
 
 measurement_result_folder = "../menog-rtt-measure/measurements/"
 rtt_min_list =[]
+rtt_med_list =[]
 rtt_min_dict ={ }
+rtt_med_dict ={ }
+
 
 CountryDistance = [
 [1, 487.21, 990, 432.91, 1680, 859.39, 1600, 140, 1594.86, 2238.6],
@@ -27,10 +30,13 @@ CountryDistance = [
 
 for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
     country_rtt_min =[]
+    country_rtt_med =[]
     main_country_code = os.path.basename(os.path.dirname(country_folder))
     rtt_min_dict[main_country_code] = {}
+    rtt_med_dict[main_country_code] = {}
     for country_file in glob.iglob(country_folder + '**/'):
         rtt_min = 1e5
+        rtt_med = 1e5
         relative_country_code = os.path.basename(os.path.dirname(country_file))
         for measurement_file in glob.iglob(country_file + '/*.json'):
             with open(measurement_file) as file_handler:
@@ -40,15 +46,24 @@ for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
                     if(raw_result.type != "ping"):
                         continue
                     parsed_result = PingResult.get(result)
-                    if(parsed_result.rtt_min == None):
+                    if(parsed_result.rtt_min == None or parsed_result.rtt_median == None):
                         continue
                     if(parsed_result.rtt_min < rtt_min):
                         rtt_min=parsed_result.rtt_min
+                    rtt_med = (parsed_result.rtt_median + rtt_med)/2
         country_rtt_min.append(rtt_min)
+        country_rtt_med.append(rtt_med)
         rtt_min_dict[main_country_code][relative_country_code] = rtt_min
+        rtt_med_dict[main_country_code][relative_country_code] = rtt_med
     rtt_min_list.append(country_rtt_min)
+    rtt_med_list.append(country_rtt_med)
 print(rtt_min_list)
 print(rtt_min_dict)
+print(rtt_med_list)
+print(rtt_med_dict)
 
 rtt_min_dataframe = pd.DataFrame(rtt_min_dict)
 rtt_min_dataframe.to_csv(r'graphs/rtt_min.csv')
+
+rtt_med_dataframe = pd.DataFrame(rtt_med_dict)
+rtt_med_dataframe.to_csv(r'graphs/rtt_med.csv')
