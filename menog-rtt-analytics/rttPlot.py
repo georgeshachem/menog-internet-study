@@ -21,11 +21,14 @@ def cluster_compute(rtt_df):
     G = nx.from_dict_of_lists(rtt_dict)
 
     for e1,e2 in list(G.edges):
-        G[e1][e2]['weight'] = rtt_df[e1][e2]
+        G[e1][e2]['weight'] = (rtt_df[e1][e2]+rtt_df[e2][e1])/2
+    
+    print(nx.get_edge_attributes(G,'weight'))
 
     #first compute the best partition
     partition = community.best_partition(G)
     print(partition)
+    print(community.modularity(partition, G))
 
     #drawing
     size = float(len(set(partition.values())))
