@@ -23,7 +23,7 @@ def cluster_compute(rtt_df):
     for e1,e2 in list(G.edges):
         G[e1][e2]['weight'] = (rtt_df[e1][e2]+rtt_df[e2][e1])/2
     
-    print(nx.get_edge_attributes(G,'weight'))
+    #print(nx.get_edge_attributes(G,'weight'))
 
     #first compute the best partition
     partition = community.best_partition(G)
