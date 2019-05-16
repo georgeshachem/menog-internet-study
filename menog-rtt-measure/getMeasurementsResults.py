@@ -4,6 +4,8 @@ import ntpath
 import json
 from ripe.atlas.cousteau import AtlasResultsRequest
 
+failed_measurements = list()
+
 for filepath in glob.iglob('measurements/*.json'):
     file_name = os.path.splitext(ntpath.basename(filepath))[0]
     folder_name = "measurements/data/{}/".format(file_name)
@@ -18,8 +20,14 @@ for filepath in glob.iglob('measurements/*.json'):
                 for measurement in elt['measurement_id']:
                     kwargs = {"msm_id": measurement}
                     (is_success, results) = AtlasResultsRequest(**kwargs).create()
-                    if (is_success):
-                    	with open("measurements/data/{}/{}/{}.json".format(file_name, k, measurement), "w") as f:
-                        	json.dump(results, f, indent=4, sort_keys=True)
+                    try:
+                        with open("measurements/data/{}/{}/{}.json".format(file_name, k, measurement), "w") as f:
+                            json.dump(results, f, indent=4, sort_keys=True)
+                    except Exception as e:
+                        failed_measurements.append(measurement)
             except KeyError:
                 pass
+
+with open('measurements-failed-to-download.txt', 'w') as f:
+    for elt in failed_measurements:
+        f.write("%s\n" % elt)
