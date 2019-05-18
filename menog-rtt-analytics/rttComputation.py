@@ -50,6 +50,22 @@ for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
             country_rtt_med = 1e5
         rtt_med_dict[main_country_code][relative_country_code] = np.median(country_rtt_med)
 
+for c1 in rtt_med_dict:
+    for c2 in rtt_med_dict[c1]:
+        if(rtt_med_dict[c1][c2] == 1e5 or rtt_med_dict[c2][c1] == 1e5):
+            rtt_med_dict[c1][c2] = np.min([rtt_med_dict[c1][c2],rtt_med_dict[c2][c1]])
+            rtt_med_dict[c2][c1] = rtt_med_dict[c1][c2]
+            continue
+        if(rtt_min_dict[c1][c2] == 1e5 or rtt_min_dict[c2][c1] == 1e5):
+            rtt_min_dict[c1][c2] = np.min([rtt_min_dict[c1][c2],rtt_min_dict[c2][c1]])
+            rtt_min_dict[c2][c1] = rtt_min_dict[c1][c2]
+            continue
+
+        rtt_med_dict[c1][c2] = (rtt_med_dict[c1][c2] + rtt_med_dict[c2][c1])/2
+        rtt_med_dict[c2][c1] = rtt_med_dict[c1][c2]
+        rtt_min_dict[c1][c2] = (rtt_min_dict[c1][c2] + rtt_min_dict[c2][c1])/2
+        rtt_min_dict[c2][c1] = rtt_min_dict[c1][c2]
+
 rtt_min_dataframe = pd.DataFrame(rtt_min_dict)
 rtt_min_dataframe.to_csv(r'graphs/rtt_min.csv')
 
