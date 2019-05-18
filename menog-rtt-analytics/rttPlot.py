@@ -5,13 +5,15 @@ import networkx as nx
 import community
 
 rtt_min_df = pd.read_csv('graphs/rtt_min.csv', header = 0,index_col=0)
-ax = sns.heatmap(rtt_min_df, annot=True, fmt=".0f")
+#ax = sns.heatmap(rtt_min_df, annot=True, fmt=".0f")
+ax = sns.clustermap(rtt_min_df, method='average', figsize=(8, 8))
 plt.savefig('graphs/rtt_min_heatmap.eps')
 plt.savefig('graphs/rtt_min_heatmap.pdf')
 plt.show()
 
 rtt_med_df = pd.read_csv('graphs/rtt_med.csv', header = 0,index_col=0)
-ax = sns.heatmap(rtt_med_df, annot=True, fmt=".0f")
+#ax = sns.heatmap(rtt_med_df, annot=True, fmt=".0f")
+ax = sns.clustermap(rtt_med_df, method='average', figsize=(8, 8))
 plt.savefig('graphs/rtt_med_heatmap.eps')
 plt.savefig('graphs/rtt_med_heatmap.pdf')
 plt.show()
