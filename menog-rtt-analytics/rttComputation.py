@@ -1,6 +1,4 @@
-import requests
 import json
-import sys
 import numpy as np
 import pandas as pd
 import glob
@@ -9,8 +7,6 @@ from ripe.atlas.sagan import PingResult
 from ripe.atlas.sagan import Result
 
 measurement_result_folder = "../menog-rtt-measure/measurements/"
-rtt_min_list =[]
-rtt_med_list =[]
 rtt_min_dict ={ }
 rtt_med_dict ={ }
 
@@ -29,14 +25,12 @@ CountryDistance = [
 ]
 
 for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
-    country_rtt_min =[]
-    country_rtt_med =[]
     main_country_code = os.path.basename(os.path.dirname(country_folder))
     rtt_min_dict[main_country_code] = {}
     rtt_med_dict[main_country_code] = {}
     for country_file in glob.iglob(country_folder + '**/'):
         rtt_min = 1e5
-        rtt_med = 1e5
+        country_rtt_med =[]
         relative_country_code = os.path.basename(os.path.dirname(country_file))
         for measurement_file in glob.iglob(country_file + '/*.json'):
             with open(measurement_file) as file_handler:
@@ -50,17 +44,11 @@ for country_folder in glob.iglob(measurement_result_folder+'data/**/'):
                         continue
                     if(parsed_result.rtt_min < rtt_min):
                         rtt_min=parsed_result.rtt_min
-                    rtt_med = (parsed_result.rtt_median + rtt_med)/2
-        country_rtt_min.append(rtt_min)
-        country_rtt_med.append(rtt_med)
+                    country_rtt_med.append(parsed_result.rtt_median)
         rtt_min_dict[main_country_code][relative_country_code] = rtt_min
-        rtt_med_dict[main_country_code][relative_country_code] = rtt_med
-    rtt_min_list.append(country_rtt_min)
-    rtt_med_list.append(country_rtt_med)
-print(rtt_min_list)
-print(rtt_min_dict)
-print(rtt_med_list)
-print(rtt_med_dict)
+        if(not country_rtt_med):
+            country_rtt_med = 1e5
+        rtt_med_dict[main_country_code][relative_country_code] = np.median(country_rtt_med)
 
 rtt_min_dataframe = pd.DataFrame(rtt_min_dict)
 rtt_min_dataframe.to_csv(r'graphs/rtt_min.csv')
