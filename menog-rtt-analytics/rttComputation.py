@@ -10,7 +10,6 @@ measurement_result_folder = "../menog-rtt-measure/measurements/"
 rtt_min_dict ={ }
 rtt_med_dict ={ }
 
-
 CountryDistance = [
 [1, 487.21, 990, 432.91, 1680, 859.39, 1600, 140, 1594.86, 2238.6],
 [487.21, 1, 695.24, 772.49, 1466.11, 1507.96, 2467.12, 1155.51, 1733.26, 8709.77],
