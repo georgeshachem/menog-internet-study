@@ -4,20 +4,36 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import community
 
-rtt_min_df = pd.read_csv('graphs/rtt_min.csv', header = 0,index_col=0)
+sym_rtt_min_df = pd.read_csv('graphs/sym_rtt_min.csv', header = 0,index_col=0)
 #ax = sns.heatmap(rtt_min_df, annot=True, fmt=".0f")
-ax = sns.clustermap(rtt_min_df, method='average', figsize=(8, 8))
+ax = sns.clustermap(sym_rtt_min_df, method='average', figsize=(8, 8))
 ax.ax_row_dendrogram.set_visible(False)
-plt.savefig('graphs/rtt_min_heatmap.eps')
-plt.savefig('graphs/rtt_min_heatmap.pdf')
+plt.savefig('graphs/sym_rtt_min_heatmap.eps')
+plt.savefig('graphs/sym_rtt_min_heatmap.pdf')
 plt.show()
 
-rtt_med_df = pd.read_csv('graphs/rtt_med.csv', header = 0,index_col=0)
+sym_rtt_med_df = pd.read_csv('graphs/sym_rtt_med.csv', header = 0,index_col=0)
 #ax = sns.heatmap(rtt_med_df, annot=True, fmt=".0f")
-ax = sns.clustermap(rtt_med_df, method='average', figsize=(8, 8))
+ax = sns.clustermap(sym_rtt_med_df, method='average', figsize=(8, 8))
 ax.ax_row_dendrogram.set_visible(False)
-plt.savefig('graphs/rtt_med_heatmap.eps')
-plt.savefig('graphs/rtt_med_heatmap.pdf')
+plt.savefig('graphs/sym_rtt_med_heatmap.eps')
+plt.savefig('graphs/sym_rtt_med_heatmap.pdf')
+plt.show()
+
+asym_rtt_min_df = pd.read_csv('graphs/asym_rtt_min.csv', header = 0,index_col=0)
+#ax = sns.heatmap(rtt_min_df, annot=True, fmt=".0f")
+ax = sns.clustermap(asym_rtt_min_df, method='average', figsize=(8, 8))
+ax.ax_row_dendrogram.set_visible(False)
+plt.savefig('graphs/asym_rtt_min_heatmap.eps')
+plt.savefig('graphs/asym_rtt_min_heatmap.pdf')
+plt.show()
+
+asym_rtt_med_df = pd.read_csv('graphs/asym_rtt_med.csv', header = 0,index_col=0)
+#ax = sns.heatmap(rtt_med_df, annot=True, fmt=".0f")
+ax = sns.clustermap(asym_rtt_med_df, method='average', figsize=(8, 8))
+ax.ax_row_dendrogram.set_visible(False)
+plt.savefig('graphs/asym_rtt_med_heatmap.eps')
+plt.savefig('graphs/asym_rtt_med_heatmap.pdf')
 plt.show()
 
 def cluster_compute(rtt_df):
@@ -49,5 +65,5 @@ def cluster_compute(rtt_df):
     nx.draw_networkx_edges(G, pos, alpha=0.5)
     plt.show()
 
-cluster_compute(rtt_min_df)
-cluster_compute(rtt_med_df)
+cluster_compute(sym_rtt_min_df)
+cluster_compute(sym_rtt_med_df)

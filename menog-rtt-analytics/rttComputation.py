@@ -61,13 +61,22 @@ for c1 in rtt_med_dict:
             rtt_min_dict[c2][c1] = rtt_min_dict[c1][c2]
             continue
 
+asym_rtt_min_dataframe = pd.DataFrame(rtt_min_dict)
+asym_rtt_min_dataframe.to_csv(r'graphs/asym_rtt_min.csv')
+
+asym_rtt_med_dataframe = pd.DataFrame(rtt_med_dict)
+asym_rtt_med_dataframe.to_csv(r'graphs/asym_rtt_med.csv')
+
+# Compute a symetric matrix based on averages 
+for c1 in rtt_med_dict:
+    for c2 in rtt_med_dict[c1]:
         rtt_med_dict[c1][c2] = (rtt_med_dict[c1][c2] + rtt_med_dict[c2][c1])/2
         rtt_med_dict[c2][c1] = rtt_med_dict[c1][c2]
         rtt_min_dict[c1][c2] = (rtt_min_dict[c1][c2] + rtt_min_dict[c2][c1])/2
         rtt_min_dict[c2][c1] = rtt_min_dict[c1][c2]
 
-rtt_min_dataframe = pd.DataFrame(rtt_min_dict)
-rtt_min_dataframe.to_csv(r'graphs/rtt_min.csv')
+sym_rtt_min_dataframe = pd.DataFrame(rtt_min_dict)
+sym_rtt_min_dataframe.to_csv(r'graphs/sym_rtt_min.csv')
 
-rtt_med_dataframe = pd.DataFrame(rtt_med_dict)
-rtt_med_dataframe.to_csv(r'graphs/rtt_med.csv')
+sym_rtt_med_dataframe = pd.DataFrame(rtt_med_dict)
+sym_rtt_med_dataframe.to_csv(r'graphs/sym_rtt_med.csv')
