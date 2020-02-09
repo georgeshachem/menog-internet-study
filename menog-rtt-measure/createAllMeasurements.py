@@ -27,13 +27,14 @@ for source_country, source_country_code in countries.items():
                 break
             ping = Ping(af=4, target=speedtest_server['host'],
                         description="From {} to {}".format(source_country_code, destination_country_code),
-                        interval=10800)
+                        interval=10800, tags=["menog-cp-1"])
             traceroute = Traceroute(
                 af=4,
                 target=speedtest_server['host'],
                 description="From {} to {}".format(source_country_code, destination_country_code),
                 protocol="ICMP",
-                interval=10800
+                interval=10800,
+                tags=["menog-cp-1"]
             )
             source = AtlasSource(type="country", value=source_country_code, requested=5)
             atlas_request = AtlasCreateRequest(

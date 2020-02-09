@@ -9,9 +9,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "We do not allow more than 25 concurrent measurements to the same target: speedtest.orixcom.net.",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": ""
                             }
                         }
                     ],
@@ -22,769 +22,325 @@
         },
         {
             "host": "ae.ap.speedtest.i3d.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939444,
+                23939445
+            ]
         }
     ],
     "BH": [
         {
-            "host": "sp1.etisalcom.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest1.rapid-telecom.com",
+            "is_success": true,
+            "measurement_id": [
+                23939446,
+                23939447
+            ]
         },
         {
             "host": "speedtest.kalaam-telecom.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939448,
+                23939449
+            ]
         },
         {
             "host": "speedtest.viva.com.bh",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939450,
+                23939451
+            ]
         }
     ],
     "EG": [
         {
+            "host": "speedtestob.orange.eg",
+            "is_success": true,
+            "measurement_id": [
+                23939452,
+                23939453
+            ]
+        },
+        {
             "host": "sp40.etisalatdata.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939454,
+                23939455
+            ]
         },
         {
-            "host": "sp20.etisalatdata.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "speedtestawd.orange.eg",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "sp30.etisalatdata.net",
+            "is_success": true,
+            "measurement_id": [
+                23939456,
+                23939457
+            ]
         }
     ],
     "IQ": [
         {
-            "host": "spd1.newroztelecom.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest.awaltelecom.com",
+            "is_success": true,
+            "measurement_id": [
+                23939458,
+                23939459
+            ]
         },
         {
-            "host": "speedtest1.earthlinktele.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speed.nextnet.co",
+            "is_success": true,
+            "measurement_id": [
+                23939460,
+                23939461
+            ]
         },
         {
-            "host": "sp1.fastiraq.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest.o3-telecom.com",
+            "is_success": true,
+            "measurement_id": [
+                23939462,
+                23939463
+            ]
         }
     ],
     "IR": [
         {
-            "host": "speedtest.laser.ir",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "testspeed.parsonline.com",
+            "is_success": true,
+            "measurement_id": [
+                23939464,
+                23939465
+            ]
         },
         {
-            "host": "speedtest.varzesh3.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "turbo.nakhl.net",
+            "is_success": true,
+            "measurement_id": [
+                23939466,
+                23939467
+            ]
         },
         {
-            "host": "speedtest1.irancell.ir",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest.tegrahost.com",
+            "is_success": true,
+            "measurement_id": [
+                23939468,
+                23939469
+            ]
         }
     ],
     "JO": [
         {
-            "host": "speedtest3.vtel.jo",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "speed1.jcs.jo",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
             "host": "speedtest.orange.jo",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939470,
+                23939471
+            ]
+        },
+        {
+            "host": "speedtest3.vtel.jo",
+            "is_success": true,
+            "measurement_id": [
+                23939472,
+                23939473
+            ]
+        },
+        {
+            "host": "speedtest.zaindata.com.jo",
+            "is_success": true,
+            "measurement_id": [
+                23939474,
+                23939475
+            ]
         }
     ],
     "KW": [
         {
-            "host": "ookla.ooredoo.com.kw",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedest4.kw.zain.com",
+            "is_success": true,
+            "measurement_id": [
+                23939476,
+                23939477
+            ]
+        },
+        {
+            "host": "speedest3.kw.zain.com",
+            "is_success": true,
+            "measurement_id": [
+                23939478,
+                23939479
+            ]
         },
         {
             "host": "speedest2.kw.zain.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "94.128.15.102",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939480,
+                23939481
+            ]
         }
     ],
     "LB": [
         {
-            "host": "speedtest.lebol.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "swiftlb.com",
+            "is_success": true,
+            "measurement_id": [
+                23939482,
+                23939483
+            ]
         },
         {
             "host": "speedtest.netprolb.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939484,
+                23939485
+            ]
         },
         {
-            "host": "speedtest.hispeed-lb.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest.fns-lb.com",
+            "is_success": true,
+            "measurement_id": [
+                23939486,
+                23939487
+            ]
         }
     ],
     "OM": [
         {
-            "host": "speedtest.omantel.om",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speed.omren.om",
+            "is_success": true,
+            "measurement_id": [
+                23939488,
+                23939489
+            ]
         },
         {
-            "host": "speed.omren.om",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest.ooredoo.om",
+            "is_success": true,
+            "measurement_id": [
+                23939490,
+                23939491
+            ]
         },
         {
             "host": "speedtest2.ooredoo.om",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939492,
+                23939493
+            ]
         }
     ],
     "PS": [
         {
+            "host": "speedtest1.together-pal.com",
+            "is_success": true,
+            "measurement_id": [
+                23939494,
+                23939495
+            ]
+        },
+        {
+            "host": "speedtest.ns.ps",
+            "is_success": true,
+            "measurement_id": [
+                23939496,
+                23939497
+            ]
+        },
+        {
             "host": "speedtest.mada.ps",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "speedtest.hadara.ps",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "speedtest-gz.paltel.ps",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939498,
+                23939499
+            ]
         }
     ],
     "QA": [
         {
             "host": "speedtest01.vodafone.com.qa",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939500,
+                23939501
+            ]
         }
     ],
     "SA": [
         {
-            "host": "jouf.myspeed.net.sa",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "baha-speedtest.saudi.net.sa",
+            "is_success": true,
+            "measurement_id": [
+                23939502,
+                23939503
+            ]
         },
         {
-            "host": "speedtest-qassim.sa.zain.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "bisha-speedtest.saudi.net.sa",
+            "is_success": true,
+            "measurement_id": [
+                23939504,
+                23939505
+            ]
         },
         {
-            "host": "yanbu-speedtest.saudi.net.sa",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "ynb.myspeed.net.sa",
+            "is_success": true,
+            "measurement_id": [
+                23939506,
+                23939507
+            ]
         }
     ],
     "SY": [
         {
             "host": "speedtest.pulseoflife.syr1.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939508,
+                23939509
+            ]
         },
         {
             "host": "smart-sy.tk",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "is_success": true,
+            "measurement_id": [
+                23939510,
+                23939511
+            ]
         }
     ],
     "TR": [
         {
-            "host": "test.euronet.net.tr",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest7.vodafone.com.tr",
+            "is_success": true,
+            "measurement_id": [
+                23939512,
+                23939513
+            ]
         },
         {
-            "host": "test.didimnet.com.tr",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest.efsanenet.com.tr",
+            "is_success": true,
+            "measurement_id": [
+                23939514,
+                23939515
+            ]
         },
         {
-            "host": "star.elcomnetwork.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
+            "host": "speedtest-guzelyurt.nethouse.net",
+            "is_success": true,
+            "measurement_id": [
+                23939516,
+                23939517
+            ]
         }
     ],
     "YE": []

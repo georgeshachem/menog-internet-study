@@ -1,7 +1,7 @@
 {
     "AE": [
         {
-            "host": "ae.ap.speedtest.i3d.net",
+            "host": "speedtest.orixcom.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -21,7 +21,7 @@
             }
         },
         {
-            "host": "speedtest.orixcom.net",
+            "host": "ae.ap.speedtest.i3d.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -43,7 +43,7 @@
     ],
     "BH": [
         {
-            "host": "speedtest1.rapid-telecom.com",
+            "host": "speedtest.viva.com.bh",
             "is_success": false,
             "reason": {
                 "error": {
@@ -83,7 +83,7 @@
             }
         },
         {
-            "host": "speedtest.kalaam-telecom.com",
+            "host": "speedtest1.rapid-telecom.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -105,7 +105,27 @@
     ],
     "EG": [
         {
-            "host": "speedtestob.orange.eg",
+            "host": "sp30.etisalatdata.net",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "sp40.etisalatdata.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -143,31 +163,11 @@
                     "title": "Bad Request"
                 }
             }
-        },
-        {
-            "host": "speedtest.vodafone.com.eg",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "There are no connected probes in your selected country (YE)",
-                            "source": {
-                                "pointer": "/probes/0/value"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
         }
     ],
     "IQ": [
         {
-            "host": "speedtest.awaltelecom.com",
+            "host": "sp5.fastiraq.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -187,7 +187,7 @@
             }
         },
         {
-            "host": "spt001.gorannet.net",
+            "host": "speedtest.asas.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -207,7 +207,7 @@
             }
         },
         {
-            "host": "speedtest1.earthlinktele.com",
+            "host": "speedtest.o3-telecom.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -229,7 +229,7 @@
     ],
     "IR": [
         {
-            "host": "speed.atinet.ir",
+            "host": "speedtest1.chapar.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -249,7 +249,7 @@
             }
         },
         {
-            "host": "testspeed.parsonline.com",
+            "host": "sp1.petiak.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -269,7 +269,7 @@
             }
         },
         {
-            "host": "speedtest.hormoznet.net",
+            "host": "speedtest.roshangaran.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -291,26 +291,6 @@
     ],
     "JO": [
         {
-            "host": "speed1.jcs.jo",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "There are no connected probes in your selected country (YE)",
-                            "source": {
-                                "pointer": "/probes/0/value"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
             "host": "speedtest3.vtel.jo",
             "is_success": false,
             "reason": {
@@ -331,7 +311,27 @@
             }
         },
         {
-            "host": "speedtest.umniah.com",
+            "host": "speedtest.orange.jo",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "speedtest.zaindata.com.jo",
             "is_success": false,
             "reason": {
                 "error": {
@@ -353,7 +353,7 @@
     ],
     "KW": [
         {
-            "host": "fast.bonline.com.kw",
+            "host": "st21.fasttelco.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -373,7 +373,7 @@
             }
         },
         {
-            "host": "speedest3.kw.zain.com",
+            "host": "ookla3.viva.com.kw",
             "is_success": false,
             "reason": {
                 "error": {
@@ -393,7 +393,7 @@
             }
         },
         {
-            "host": "94.128.15.102",
+            "host": "speedest1.kw.zain.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -415,47 +415,47 @@
     ],
     "LB": [
         {
-            "host": "speedtest.lebol.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "There are no connected probes in your selected country (YE)",
-                            "source": {
-                                "pointer": "/probes/0/value"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "speedtest.netprolb.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "There are no connected probes in your selected country (YE)",
-                            "source": {
-                                "pointer": "/probes/0/value"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
             "host": "speedtest.hispeed-lb.net",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "speedtest.mobi.net.lb",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "speedtest.net360.net.lb",
             "is_success": false,
             "reason": {
                 "error": {
@@ -477,7 +477,7 @@
     ],
     "OM": [
         {
-            "host": "speedtest.omantel.om",
+            "host": "speed.omren.om",
             "is_success": false,
             "reason": {
                 "error": {
@@ -517,7 +517,7 @@
             }
         },
         {
-            "host": "speedtest.ooredoo.om",
+            "host": "speedtest.awasr.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -539,7 +539,7 @@
     ],
     "PS": [
         {
-            "host": "speedtest5.mada.ps",
+            "host": "speedtest1.together-pal.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -559,7 +559,7 @@
             }
         },
         {
-            "host": "82.213.28.12",
+            "host": "speedtest.ns.ps",
             "is_success": false,
             "reason": {
                 "error": {
@@ -579,7 +579,7 @@
             }
         },
         {
-            "host": "speedtest.mada.ps",
+            "host": "212.14.233.186",
             "is_success": false,
             "reason": {
                 "error": {
@@ -623,7 +623,7 @@
     ],
     "SA": [
         {
-            "host": "yanbu-speedtest.saudi.net.sa",
+            "host": "tbk.myspeed.net.sa",
             "is_success": false,
             "reason": {
                 "error": {
@@ -663,7 +663,7 @@
             }
         },
         {
-            "host": "najran-speedtest.saudi.net.sa",
+            "host": "NJR.myspeed.net.sa",
             "is_success": false,
             "reason": {
                 "error": {
@@ -727,7 +727,7 @@
     ],
     "TR": [
         {
-            "host": "speedtest-magusa.nethouse.net",
+            "host": "speedtest.hizhosting.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -747,7 +747,7 @@
             }
         },
         {
-            "host": "hiztesti.atlantisnet.com.tr",
+            "host": "streaming.netdirekt.com.tr",
             "is_success": false,
             "reason": {
                 "error": {
@@ -767,7 +767,7 @@
             }
         },
         {
-            "host": "sp1.ni.net.tr",
+            "host": "ste.elcomnetwork.net",
             "is_success": false,
             "reason": {
                 "error": {
