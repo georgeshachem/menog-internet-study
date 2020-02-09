@@ -9,7 +9,7 @@ from ripe.atlas.cousteau import (
     AtlasCreateRequest
 )
 
-ATLAS_API_KEY = "INSERT_YOUR_API_KEY"
+ATLAS_API_KEY = "acaae2b3-142b-49b1-a64b-e3f74a200372"
 
 with open('working_speedtest_servers.json', 'r') as f:
     servers = json.load(f)

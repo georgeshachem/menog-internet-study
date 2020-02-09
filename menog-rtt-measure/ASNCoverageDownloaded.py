@@ -52,5 +52,5 @@ for country, ips in all_ips.items():
     all_data[country]["covered_asn_probes_list"] = list(total_asn_covered['probes'])
     all_data[country]["covered_asn_speedtest_list"] = list(total_asn_covered['speedtest'])
 
-with open("asn-coverage.json", "w") as f:
+with open("asn_coverage.json", "w") as f:
     json.dump(all_data, f, indent=4, sort_keys=True)

@@ -11,7 +11,7 @@ from ripe.atlas.cousteau import (
     AtlasCreateRequest
 )
 
-ATLAS_API_KEY = "INSERT_YOUR_API_KEY"
+ATLAS_API_KEY = "acaae2b3-142b-49b1-a64b-e3f74a200372"
 
 for filepath in glob.iglob('measurements/*.json'):
     source_country_code = os.path.splitext(ntpath.basename(filepath))[0]

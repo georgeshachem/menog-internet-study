@@ -1,7 +1,7 @@
 import json
 from ping3 import ping
 
-with open("speedtest_servers.json", "r") as f:
+with open("all_speedtest_servers.json", "r") as f:
     all_servers = json.load(f)
 
 working_servers = dict()

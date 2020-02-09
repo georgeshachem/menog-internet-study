@@ -9,9 +9,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -29,9 +29,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -51,9 +51,29 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "sp1.etisalcom.com",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -71,29 +91,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "stest.bh.zain.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -105,7 +105,7 @@
     ],
     "EG": [
         {
-            "host": "speedtest.orange.eg",
+            "host": "speedtestob.orange.eg",
             "is_success": false,
             "reason": {
                 "error": {
@@ -113,9 +113,29 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "sp20.etisalatdata.net",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -133,29 +153,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "197.164.238.6",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -167,6 +167,26 @@
     ],
     "IQ": [
         {
+            "host": "speedtest.awaltelecom.com",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
             "host": "spt001.gorannet.net",
             "is_success": false,
             "reason": {
@@ -175,9 +195,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -187,7 +207,7 @@
             }
         },
         {
-            "host": "spd1.newroztelecom.com",
+            "host": "speedtest1.earthlinktele.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -195,29 +215,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "speedtest2.almadarisp.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -229,7 +229,7 @@
     ],
     "IR": [
         {
-            "host": "speedtest1.shatel.ir",
+            "host": "speed.atinet.ir",
             "is_success": false,
             "reason": {
                 "error": {
@@ -237,9 +237,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -249,7 +249,7 @@
             }
         },
         {
-            "host": "speedtest.varzesh3.com",
+            "host": "testspeed.parsonline.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -257,9 +257,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -269,7 +269,7 @@
             }
         },
         {
-            "host": "speedtest.pars.host",
+            "host": "speedtest.hormoznet.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -277,9 +277,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -291,7 +291,7 @@
     ],
     "JO": [
         {
-            "host": "speedtest.zaindata.com.jo",
+            "host": "speed1.jcs.jo",
             "is_success": false,
             "reason": {
                 "error": {
@@ -299,9 +299,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -319,9 +319,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -331,7 +331,7 @@
             }
         },
         {
-            "host": "speedtest.orange.jo",
+            "host": "speedtest.umniah.com",
             "is_success": false,
             "reason": {
                 "error": {
@@ -339,9 +339,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -353,46 +353,6 @@
     ],
     "KW": [
         {
-            "host": "speedtest.qualitynet.net",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
-            "host": "speedest2.kw.zain.com",
-            "is_success": false,
-            "reason": {
-                "error": {
-                    "code": 102,
-                    "detail": "There was a problem with your request",
-                    "errors": [
-                        {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
-                            "source": {
-                                "pointer": "/definitions"
-                            }
-                        }
-                    ],
-                    "status": 400,
-                    "title": "Bad Request"
-                }
-            }
-        },
-        {
             "host": "fast.bonline.com.kw",
             "is_success": false,
             "reason": {
@@ -401,9 +361,49 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "speedest3.kw.zain.com",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
+                            }
+                        }
+                    ],
+                    "status": 400,
+                    "title": "Bad Request"
+                }
+            }
+        },
+        {
+            "host": "94.128.15.102",
+            "is_success": false,
+            "reason": {
+                "error": {
+                    "code": 102,
+                    "detail": "There was a problem with your request",
+                    "errors": [
+                        {
+                            "detail": "There are no connected probes in your selected country (YE)",
+                            "source": {
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -415,7 +415,7 @@
     ],
     "LB": [
         {
-            "host": "sp1.terra.net.lb",
+            "host": "speedtest.lebol.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -423,9 +423,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -443,9 +443,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -455,7 +455,7 @@
             }
         },
         {
-            "host": "speedtest.aoun-networks.com",
+            "host": "speedtest.hispeed-lb.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -463,9 +463,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -477,7 +477,7 @@
     ],
     "OM": [
         {
-            "host": "speedtest.ooredoo.om",
+            "host": "speedtest.omantel.om",
             "is_success": false,
             "reason": {
                 "error": {
@@ -485,9 +485,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -505,9 +505,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -517,7 +517,7 @@
             }
         },
         {
-            "host": "speedtest2.ooredoo.om",
+            "host": "speedtest.ooredoo.om",
             "is_success": false,
             "reason": {
                 "error": {
@@ -525,9 +525,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -547,9 +547,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -559,7 +559,7 @@
             }
         },
         {
-            "host": "speedtest.ns.ps",
+            "host": "82.213.28.12",
             "is_success": false,
             "reason": {
                 "error": {
@@ -567,9 +567,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -579,7 +579,7 @@
             }
         },
         {
-            "host": "212.14.233.186",
+            "host": "speedtest.mada.ps",
             "is_success": false,
             "reason": {
                 "error": {
@@ -587,9 +587,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -609,9 +609,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -623,7 +623,7 @@
     ],
     "SA": [
         {
-            "host": "hail-speedtest.saudi.net.sa",
+            "host": "yanbu-speedtest.saudi.net.sa",
             "is_success": false,
             "reason": {
                 "error": {
@@ -631,9 +631,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -643,7 +643,7 @@
             }
         },
         {
-            "host": "speedtest-riyadhnew.sa.zain.com",
+            "host": "jed.myspeed.net.sa",
             "is_success": false,
             "reason": {
                 "error": {
@@ -651,9 +651,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -663,7 +663,7 @@
             }
         },
         {
-            "host": "bisha-speedtest.saudi.net.sa",
+            "host": "najran-speedtest.saudi.net.sa",
             "is_success": false,
             "reason": {
                 "error": {
@@ -671,9 +671,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -693,9 +693,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -713,9 +713,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -727,7 +727,7 @@
     ],
     "TR": [
         {
-            "host": "speedtest.adatanet.com",
+            "host": "speedtest-magusa.nethouse.net",
             "is_success": false,
             "reason": {
                 "error": {
@@ -735,9 +735,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -747,7 +747,7 @@
             }
         },
         {
-            "host": "sp1.basefix.com",
+            "host": "hiztesti.atlantisnet.com.tr",
             "is_success": false,
             "reason": {
                 "error": {
@@ -755,9 +755,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
@@ -767,7 +767,7 @@
             }
         },
         {
-            "host": "kysr01.hizinitestet.com",
+            "host": "sp1.ni.net.tr",
             "is_success": false,
             "reason": {
                 "error": {
@@ -775,9 +775,9 @@
                     "detail": "There was a problem with your request",
                     "errors": [
                         {
-                            "detail": "You are not permitted to run more than 100 concurrent measurements.",
+                            "detail": "There are no connected probes in your selected country (YE)",
                             "source": {
-                                "pointer": "/definitions"
+                                "pointer": "/probes/0/value"
                             }
                         }
                     ],
