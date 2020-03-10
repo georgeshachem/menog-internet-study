@@ -2,7 +2,7 @@ import glob
 import json
 from ripe.atlas.cousteau import AtlasStopRequest
 
-ATLAS_STOP_API_KEY = ""
+ATLAS_STOP_API_KEY = "e0c2b2ed-f479-43f4-9043-74fe20b89d3e"
 
 failed_measurements = list()
 
